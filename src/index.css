@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Neon Colors */
+    --neon-green: #39ff14;
+    --neon-yellow: #ffff00;
+    --neon-green-glow: rgba(57, 255, 20, 0.5);
+    --neon-yellow-glow: rgba(255, 255, 0, 0.5);
+    
+    /* Base Colors */
+    --bg-black: #000000;
+    --bg-dark: #0a0a0a;
+    --bg-darker: #050505;
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0a0;
+    --text-muted: #666666;
+  }
+
+  * {
+    @apply border-gray-200;
+
+  }
+
+  body {
+    @apply bg-black text-white;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* Neon Text Effects */
+  .text-neon-green {
+    color: var(--neon-green);
+    text-shadow: 0 0 10px var(--neon-green-glow),
+                 0 0 20px var(--neon-green-glow),
+                 0 0 30px var(--neon-green-glow);
+  }
+
+  .text-neon-yellow {
+    color: var(--neon-yellow);
+    text-shadow: 0 0 10px var(--neon-yellow-glow),
+                 0 0 20px var(--neon-yellow-glow),
+                 0 0 30px var(--neon-yellow-glow);
+  }
+
+  /* Neon Border Effects */
+  .border-neon-green {
+    border-color: var(--neon-green);
+    box-shadow: 0 0 5px var(--neon-green-glow),
+                inset 0 0 5px var(--neon-green-glow);
+  }
+
+  .border-neon-yellow {
+    border-color: var(--neon-yellow);
+    box-shadow: 0 0 5px var(--neon-yellow-glow),
+                inset 0 0 5px var(--neon-yellow-glow);
+  }
+
+  /* Hover Effects */
+  .hover-neon-green {
+    transition: all 0.3s ease;
+  }
+
+  .hover-neon-green:hover {
+    color: var(--neon-green);
+    text-shadow: 0 0 10px var(--neon-green-glow);
+  }
+
+  .hover-neon-yellow {
+    transition: all 0.3s ease;
+  }
+
+  .hover-neon-yellow:hover {
+    color: var(--neon-yellow);
+    text-shadow: 0 0 10px var(--neon-yellow-glow);
+  }
+
+  /* Background Utilities */
+  .bg-black-gradient {
+    background: linear-gradient(180deg, #000000 0%, #0a0a0a 100%);
+  }
+
+  /* Minimal Scrollbar */
+  .minimal-scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .minimal-scrollbar::-webkit-scrollbar-track {
+    background: var(--bg-darker);
+  }
+
+  .minimal-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--text-muted);
+    border-radius: 4px;
+  }
+
+  .minimal-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--neon-green);
+  }
+}
