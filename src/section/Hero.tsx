@@ -1,4 +1,3 @@
-import React from 'react';
 import Iridescence from '../components/effects/Iridescence';
 import TextType from '../components/ui/TextType';
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import Footer from './components/layout/Footer';
 import Hero from './section/Hero';
 import Skills from './section/Skills';
