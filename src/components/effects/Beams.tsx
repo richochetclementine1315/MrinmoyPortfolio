@@ -1,4 +1,5 @@
-import { forwardRef, useImperativeHandle, useEffect, useRef, useMemo, FC, ReactNode } from 'react';
+import { forwardRef, useImperativeHandle, useEffect, useRef, useMemo } from 'react';
+import type { FC, ReactNode } from 'react';
 
 import * as THREE from 'three';
 
@@ -328,7 +329,7 @@ const MergedPlanes = forwardRef<
         () => createStackedPlanesBufferGeometry(count, width, height, 0, 100),
         [count, width, height]
     );
-    useFrame((_, delta) => {
+    useFrame((_: unknown, delta: number) => {
         mesh.current.material.uniforms.time.value += 0.1 * delta;
     });
     return <mesh ref={mesh} geometry={geometry} material={material} />;
