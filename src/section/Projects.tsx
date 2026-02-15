@@ -203,7 +203,7 @@ const Projects: React.FC = () => {
                 {/* View All Projects Button */}
                 <div className="flex justify-center">
                     <a
-                        href="https://github.com/yourusername" // Replace with your GitHub profile
+                        href="https://github.com/richochetclementine1315" // Replace with your GitHub profile
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-3 px-8 py-4 bg-black/60 backdrop-blur-sm border-2 border-neon-green text-neon-green hover:bg-neon-green hover:text-black transition-all duration-300 rounded-lg font-bold text-lg"
