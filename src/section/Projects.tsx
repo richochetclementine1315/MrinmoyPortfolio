@@ -21,7 +21,7 @@ const projects: Project[] = [
         title: 'Dojo',
         description: 'Dojo is a collaborative platform for competitive programmers that brings learning and practice together. It enables users to solve problems, discuss solutions with peers, and stay updated with notifications for upcoming contests across multiple competitive programming platforms—all in one place.',
         image: '/Screenshot%202026-02-10%20151657.png', // Replace with your image path
-        techStack: ['Go', 'Typescript', 'PostgreSQL', 'OAuth2.0'],
+        techStack: ['Go', 'Typescript', 'PostgreSQL', 'OAuth2.0','GraphQL'],
         githubLink: 'https://github.com/richochetclementine1315/Dojo',
         demoLink: 'https://dojo-cp.vercel.app/'
     },
