@@ -31,7 +31,7 @@ const experiences: ExperienceCard[] = [
         id: 'cncf1',
         title: 'CNCF-Tag-Security',
         logo: '/cncf-logo.png',
-        description: 'Identified a rendering defect within the TAG Security design resources page, wherein the hexadecimal color references are erroneously bound to non-functional image assets, degrading visual integrity and user experience. Proposed remediation includes restoring the referenced assets or refactoring the page architecture to eliminate dependency on decorative image bindings for color representation. <span className="text-green-400">(Closes issue #1468)</span>',
+        description: 'Identified a rendering defect within the TAG Security design resources page, wherein the hexadecimal color references are erroneously bound to non-functional image assets, degrading visual integrity and user experience. Proposed remediation includes restoring the referenced assets or refactoring the page architecture to eliminate dependency on decorative image bindings for color representation.(Closes issue #1468)',
         link: 'https://github.com/cncf/tag-security/pull/1468',
         isMerged: true
     },
