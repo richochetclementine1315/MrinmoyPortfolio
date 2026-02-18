@@ -21,7 +21,7 @@ const experiences: ExperienceCard[] = [
         title: "GirlScript Summer Of Code '25",
         logo: '/Screenshot%202026-02-14%20221726.png',
         description: 'Achieved a top-tier ranking of 581 among 50,000+ participants, successfully merged 5+ pull requests, and made substantive contributions across two distinct projects, demonstrating high-impact technical engagement and collaborative proficiency.',
-        link: 'https://gssoc-tracker.netlify.app/leaderboard',
+        link: 'https://gssoc-tracker.netlify.app/dashboard/richochetclementine1315',
         images: [
             '/Screenshot%202026-02-14%20222024.png',
             '/Screenshot%202026-02-14%20222008.png'
