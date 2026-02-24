@@ -22,7 +22,7 @@ const experiences: ExperienceCard[] = [
         id: 'paypal',
         title: "PayPal-Career Academy Trainee '26",
         logo: '/paypal_img.png',
-        description: 'Selected for the prestigious PayPal Career Academy mentorship 2026, a 6 month long training program under the mentorship of the PayPal team, designed to cultivate and enhance the skills of aspiring professionals in the technology sector, providing comprehensive training, industry insights, and career development opportunities.',
+        description: 'Selected for the prestigious PayPal Career Academy mentorship for Tech 2026, a 6 month long training program under the mentorship of the PayPal team, designed to cultivate and enhance the skills of aspiring professionals in the technology sector, providing comprehensive training, industry insights, and career development opportunities.',
         isSelected: true
 
     },
