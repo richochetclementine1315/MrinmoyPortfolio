@@ -13,16 +13,17 @@ interface ExperienceCard {
     link?: string;
     isMerged?: boolean;
     images?: string[]; // Array of image paths for gallery
+    isSelected?: boolean; // For PayPal Career Academy or similar selections
 }
 
 const experiences: ExperienceCard[] = [
 
     {
         id: 'paypal',
-        title: "PayPal-Career Academy Trainee",
+        title: "PayPal-Career Academy Trainee '26",
         logo: '/paypal_img.png',
         description: 'Selected for the prestigious PayPal Career Academy mentorship 2026, a 6 month long training program under the mentorship of the PayPal team, designed to cultivate and enhance the skills of aspiring professionals in the technology sector, providing comprehensive training, industry insights, and career development opportunities.',
-
+        isSelected: true
 
     },
     {
@@ -136,6 +137,11 @@ const Experience: React.FC = () => {
                                         {exp.isMerged && (
                                             <span className="px-3 py-1 bg-fuchsia-500/20 border border-fuchsia-500/50 text-fuchsia-400 text-sm font-medium rounded-full">
                                                 Merged
+                                            </span>
+                                        )}
+                                        {exp.isSelected && (
+                                            <span className="px-3 py-1 bg-green-500/20 border border-green-500/50 text-green-400 text-sm font-medium rounded-full">
+                                                Selected
                                             </span>
                                         )}
                                     </div>
